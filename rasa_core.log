@@ -1,0 +1,919 @@
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+'Dispatcher' object has no attribute 'utter_checked_service'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 17, in run
+    dispatcher.utter_checked_service
+AttributeError: 'Dispatcher' object has no attribute 'utter_checked_service'
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+'Dispatcher' object has no attribute 'utter_checked_service'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 17, in run
+    else :
+AttributeError: 'Dispatcher' object has no attribute 'utter_checked_service'
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+HTTPSConnectionPool(host='www.gsuhfushnsde.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000187E1DD5B38>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x00000187E1DD5B38>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.gsuhfushnsde.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000187E1DD5B38>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 14, in run
+    r=requests.get(url=URL)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.gsuhfushnsde.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000187E1DD5B38>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+must be str, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 16, in run
+    dispatcher.utter_message("Google is up and running"+tracker.get_slot("website"))
+TypeError: must be str, not NoneType
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+must be str, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 16, in run
+    dispatcher.utter_message("Google is up and running"+tracker.get_slot("website"))
+TypeError: must be str, not NoneType
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+name 'website' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 16, in run
+    a=str(tracker.get_slot(website))
+NameError: name 'website' is not defined
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+name 'website' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 16, in run
+    if r.status_code==200 :
+NameError: name 'website' is not defined
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 19, in run
+    dispatcher.utter_message(tracker.get_slot("website"))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\dispatcher.py", line 73, in utter_message
+    for message_part in text.split("\n\n"):
+AttributeError: 'NoneType' object has no attribute 'split'
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 19, in run
+    dispatcher.utter_message(tracker.get_slot("website"))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\dispatcher.py", line 73, in utter_message
+    for message_part in text.split("\n\n"):
+AttributeError: 'NoneType' object has no attribute 'split'
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 19, in run
+    dispatcher.utter_message(tracker.get_slot('website'))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\dispatcher.py", line 73, in utter_message
+    for message_part in text.split("\n\n"):
+AttributeError: 'NoneType' object has no attribute 'split'
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+name 'website' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 19, in run
+    dispatcher.utter_message(tracker.get_slot(website))
+NameError: name 'website' is not defined
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+'NoneType' object has no attribute 'title'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 20, in run
+    dispatcher.utter_message(a.title())
+AttributeError: 'NoneType' object has no attribute 'title'
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+'NoneType' object has no attribute 'title'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 20, in run
+    dispatcher.utter_message(a.title())
+AttributeError: 'NoneType' object has no attribute 'title'
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 20, in run
+    dispatcher.utter_message(a)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\dispatcher.py", line 73, in utter_message
+    for message_part in text.split("\n\n"):
+AttributeError: 'NoneType' object has no attribute 'split'
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 20, in run
+    dispatcher.utter_message(a)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\dispatcher.py", line 73, in utter_message
+    for message_part in text.split("\n\n"):
+AttributeError: 'NoneType' object has no attribute 'split'
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 20, in run
+    dispatcher.utter_message(a)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\dispatcher.py", line 73, in utter_message
+    for message_part in text.split("\n\n"):
+AttributeError: 'NoneType' object has no attribute 'split'
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 20, in run
+    dispatcher.utter_message(a)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\dispatcher.py", line 73, in utter_message
+    for message_part in text.split("\n\n"):
+AttributeError: 'NoneType' object has no attribute 'split'
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 20, in run
+    dispatcher.utter_message(a)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\dispatcher.py", line 73, in utter_message
+    for message_part in text.split("\n\n"):
+AttributeError: 'NoneType' object has no attribute 'split'
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+'dict' object has no attribute 'split'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 20, in run
+    dispatcher.utter_message(tracker.current_slot_values())
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\dispatcher.py", line 73, in utter_message
+    for message_part in text.split("\n\n"):
+AttributeError: 'dict' object has no attribute 'split'
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+'dict' object has no attribute 'split'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 20, in run
+    dispatcher.utter_message(str(tracker.current_slot_values()))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\dispatcher.py", line 73, in utter_message
+    for message_part in text.split("\n\n"):
+AttributeError: 'dict' object has no attribute 'split'
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+'generator' object has no attribute 'split'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 20, in run
+    dispatcher.utter_message(tracker.get_latest_entity_values("website"))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\dispatcher.py", line 73, in utter_message
+    for message_part in text.split("\n\n"):
+AttributeError: 'generator' object has no attribute 'split'
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+must be str, not method
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 14, in run
+    URL="https://www."+tracker.get_slot+"com"
+TypeError: must be str, not method
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+must be str, not method
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 14, in run
+    URL="https://www."+str(tracker.get_slo)t+"com"
+TypeError: must be str, not method
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+encoding with 'idna' codec failed (UnicodeError: label too long)
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\encodings\idna.py", line 167, in encode
+    raise UnicodeError("label too long")
+UnicodeError: label too long
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 16, in run
+    r=requests.get(url=URL)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+UnicodeError: encoding with 'idna' codec failed (UnicodeError: label too long)
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+HTTPSConnectionPool(host='www.nonecom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x000002621AA4C048>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x000002621AA4C048>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.nonecom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x000002621AA4C048>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 16, in run
+    r=requests.get(url=URL)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.nonecom', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x000002621AA4C048>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+HTTPSConnectionPool(host='www.none.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x000002A64CEE6080>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x000002A64CEE6080>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.none.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x000002A64CEE6080>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 16, in run
+    r=requests.get(url=URL)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.none.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x000002A64CEE6080>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+Encountered an exception while running action 'action_weather'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+No module named 'apixu'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions1.py", line 13, in run
+    from apixu.client import ApixuClient
+ModuleNotFoundError: No module named 'apixu'
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+HTTPSConnectionPool(host='www.akjhdb.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x0000013A8C962128>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x0000013A8C962128>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.akjhdb.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x0000013A8C962128>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 17, in run
+    r=requests.get(url=URL)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.akjhdb.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x0000013A8C962128>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Unable to find the server at www.askhdbk.com
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1501, in _conn_request
+    conn.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1270, in connect
+    address_info = socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 17, in run
+    resp, content = httplib2.Http().request(URL)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1924, in request
+    cachekey,
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1595, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1508, in _conn_request
+    raise ServerNotFoundError("Unable to find the server at %s" % conn.host)
+httplib2.ServerNotFoundError: Unable to find the server at www.askhdbk.com
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+local variable 'resp' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1501, in _conn_request
+    conn.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1270, in connect
+    address_info = socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 18, in run
+    resp, content = httplib2.Http().request(URL)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1924, in request
+    cachekey,
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1595, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1508, in _conn_request
+    raise ServerNotFoundError("Unable to find the server at %s" % conn.host)
+httplib2.ServerNotFoundError: Unable to find the server at www.asjhfgu.com
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 25, in run
+    dispatcher.utter_message("Sorry! an exception occured in accessing "+s+" website and it returned status code "+resp.status)
+UnboundLocalError: local variable 'resp' referenced before assignment
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+local variable 'resp' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1501, in _conn_request
+    conn.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1270, in connect
+    address_info = socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 18, in run
+    resp, content = httplib2.Http().request(URL)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1924, in request
+    cachekey,
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1595, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1508, in _conn_request
+    raise ServerNotFoundError("Unable to find the server at %s" % conn.host)
+httplib2.ServerNotFoundError: Unable to find the server at www.askjfje.com
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 25, in run
+    dispatcher.utter_message("Sorry! an exception occured in accessing "+s+" website and it returned status code "+str(resp.status))
+UnboundLocalError: local variable 'resp' referenced before assignment
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+name 'Http' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 17, in run
+    Http.force_exception_to_status_code=True
+NameError: name 'Http' is not defined
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Encountered an exception while running action 'action_example'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Unable to find the server at www.ajshfk.com
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1501, in _conn_request
+    conn.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1270, in connect
+    address_info = socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 18, in run
+    resp, content = httplib2.Http().request(URL)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1924, in request
+    cachekey,
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1595, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\httplib2\__init__.py", line 1508, in _conn_request
+    raise ServerNotFoundError("Unable to find the server at %s" % conn.host)
+httplib2.ServerNotFoundError: Unable to find the server at www.ajshfk.com
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Encountered an exception while running action 'action_jenkins'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+must be str, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 34, in run
+    URL = "http://localhost:8080/job/"+job+"/build?token=remote_enable_token"
+TypeError: must be str, not NoneType
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Encountered an exception while running action 'action_jenkins'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+must be str, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 34, in run
+    URL = "http://localhost:8080/job/"+job+"/build?token=remote_enable_token"
+TypeError: must be str, not NoneType
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Encountered an exception while running action 'action_jenkins'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+must be str, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 34, in run
+    URL = "http://localhost:8080/job/"+job+"/build?token=remote_enable_token"
+TypeError: must be str, not NoneType
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Encountered an exception while running action 'action_jenkins'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+must be str, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rasa_core\processor.py", line 302, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\Administrator\Documents\GitHub\starter-pack\actions.py", line 34, in run
+    URL = "http://localhost:8080/job/"+job+"/build?token=remote_enable_token"
+TypeError: must be str, not NoneType
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+

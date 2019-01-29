@@ -1,0 +1,76 @@
+intents:
+  # add your intents
+  - greet
+  - thank
+  - goodbye
+  - deny
+  - affirm
+  - checkservice
+  - unknown
+  - inform
+  - st_jenkin
+  - st_jenkinp
+  - inform_para
+
+entities:
+  # replace with your entities
+  - example_entity
+  - website
+  - jenkins
+  - app_name
+  - with_param
+  - param
+  - pvalue
+
+
+slots:
+  # replace with your slots
+  website:
+    type: text
+  jenkins:
+    type: text
+  app_name:
+    type: text
+  with_param:
+    type: text
+  param:
+    type: unfeaturized
+  pvalue:
+    type: text
+  
+
+templates:
+  # templates the bot should respond with
+  utter_greet:
+    - "Hey, how can I help you?"
+  utter_thank:
+    - "You're welcome!"
+  utter_bye:
+    - "Goodbye"
+  utter_checked_service:
+    - "Google is up and running!"
+  utter_unchecked_service:
+    - "Sorry, Google is not running!"
+  utter_unknown:
+    - "Sorry, I dont recognise what you say!" 
+  utter_ask:
+    - "what is the website?"
+  utter_ask_appname:
+    - "Please mention for which job/app you want the build to be triggered"
+  utter_ask_param:
+    - "Please specify parameter and its value (for eg. Environment INT)"
+
+actions:
+  # all the utter actions from the templates, plus any custom actions
+  - utter_greet
+  - utter_thank
+  - utter_bye
+  - utter_unknown
+  - utter_ask
+  - utter_ask_appname
+  - utter_ask_param
+  - actions.ActionExample
+  - actions.ActionStartJenkinsBuild
+  - actions.ActionStartJenkinsBuildWithParams
+  
+
